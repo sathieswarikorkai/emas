@@ -41,14 +41,14 @@ export default function Footer() {
 
             <div>
               <a href="/Training">Training</a>
-              <a href="/Events">Events</a>
+              <a href="/Event">Events</a>
               <a href="/Contact">Contact Us</a>
             </div>
 
             <div>
               <a href="#">Our Mission</a>
               <a href="#">Vision</a>
-              <a href="#">Plan</a>
+              <a href="/Plans">Plan</a>
             </div>
 
           </div>

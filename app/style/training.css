@@ -1,0 +1,2390 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+    font-family: var(--font-inter), Arial, sans-serif;
+
+}
+
+body {
+   font-family: var(--font-inter), Arial, sans-serif;
+
+  background: white;
+  color: black;
+}
+
+/* =====================================================
+   TRAINING HERO
+===================================================== */
+
+.training-hero {
+  position: relative;
+
+  width: 100%;
+  height: 545px;
+
+  overflow: hidden;
+
+  background: #e3f4e9;
+
+  display: flex;
+}
+
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+
+.training-content {
+  position: relative;
+
+  z-index: 3;
+
+  width: 47%;
+
+  height: 100%;
+
+  padding: 50px 55px 50px 65px;
+
+  box-sizing: border-box;
+
+  background: #e3f4e9;
+
+  display: flex;
+
+  border-radius: 50px;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  border-right: 9px solid #00a651;
+
+
+
+  border-top-right-radius: 150px;
+
+  border-bottom-right-radius: 150px;
+
+  flex-shrink: 0;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.training-content h1 {
+  margin: 0 0 10px;
+
+  color: #69564f;
+
+  font-size: 45px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =====================================================
+   GREEN SUB HEADING
+===================================================== */
+
+.training-content h2 {
+  margin: 0 0 16px;
+
+  color: #00a94f;
+
+  font-size: 42px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -1.2px;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.training-content p {
+  width: 100%;
+
+  max-width: 540px;
+
+  margin: 0 0 22px;
+
+  color: #111;
+
+  font-size: 15px;
+
+  line-height: 1.15;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.training-button {
+  width: fit-content;
+
+  border: none;
+
+  outline: none;
+
+  padding: 11px 16px;
+
+  border-radius: 17px;
+
+  background: #00a94f;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* BUTTON ARROW */
+
+.training-button strong {
+  font-size: 22px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  transition: transform 0.3s ease;
+}
+
+
+/* BUTTON HOVER */
+
+.training-button:hover {
+  background: #008d42;
+
+  transform: translateY(-2px);
+}
+
+.training-button:hover strong {
+  transform: translateX(4px);
+}
+
+
+/* =====================================================
+   RIGHT IMAGE
+===================================================== */
+
+.training-image-wrapper {
+  position: relative;
+
+  width: 53%;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  background: #f8fae9;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.training-image {
+  object-fit: cover;
+
+  object-position: center center;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .training-hero {
+    height: 500px;
+  }
+
+
+  .training-content {
+    width: 48%;
+
+    padding: 45px 45px 45px 50px;
+
+    border-right-width: 8px;
+
+    border-top-right-radius: 120px;
+
+    border-bottom-right-radius: 120px;
+  }
+
+
+  .training-image-wrapper {
+    width: 52%;
+  }
+
+
+  .training-content h1 {
+    font-size: 32px;
+  }
+
+
+  .training-content h2 {
+    font-size: 34px;
+  }
+
+
+  .training-content p {
+    font-size: 14px;
+  }
+
+
+  .training-button {
+    font-size: 13px;
+
+    padding: 10px 15px;
+  }
+}
+
+
+/* =====================================================
+   TABLET SMALL
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .training-hero {
+    height: 460px;
+  }
+
+
+  .training-content {
+    width: 50%;
+
+    padding: 40px 35px 40px 40px;
+
+    border-top-right-radius: 100px;
+
+    border-bottom-right-radius: 100px;
+  }
+
+
+  .training-image-wrapper {
+    width: 50%;
+  }
+
+
+  .training-content h1 {
+    font-size: 29px;
+
+    letter-spacing: -0.5px;
+  }
+
+
+  .training-content h2 {
+    font-size: 30px;
+  }
+
+
+  .training-content p {
+    font-size: 13px;
+
+    line-height: 1.45;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .training-hero {
+
+    height: auto;
+
+    min-height: 750px;
+
+    display: flex;
+
+    flex-direction: column;
+  }
+
+
+  /* -----------------------------------------------
+     CONTENT
+  ------------------------------------------------ */
+
+  .training-content {
+
+    width: 100%;
+
+    height: auto;
+
+    min-height: 400px;
+
+    padding: 45px 30px 40px;
+
+    border-right: none;
+
+    border-radius: 0;
+
+    justify-content: center;
+  }
+
+
+  /* -----------------------------------------------
+     IMAGE
+  ------------------------------------------------ */
+
+  .training-image-wrapper {
+
+    width: 100%;
+
+    height: 350px;
+
+    min-height: 350px;
+  }
+
+
+  .training-image {
+
+    object-fit: cover;
+
+    object-position: center center;
+  }
+
+
+  .training-content h1 {
+
+    font-size: 32px;
+
+    line-height: 1.05;
+  }
+
+
+  .training-content h2 {
+
+    font-size: 32px;
+
+    line-height: 1.1;
+  }
+
+
+  .training-content p {
+
+    max-width: 100%;
+
+    font-size: 15px;
+
+    line-height: 1.55;
+  }
+
+
+  .training-button {
+
+    padding: 12px 18px;
+
+    font-size: 15px;
+
+    border-radius: 20px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .training-hero {
+    min-height: 680px;
+  }
+
+
+  .training-content {
+
+    min-height: 370px;
+
+    padding: 38px 22px 35px;
+  }
+
+
+  .training-image-wrapper {
+
+    height: 310px;
+
+    min-height: 310px;
+  }
+
+
+  .training-content h1 {
+
+    font-size: 27px;
+  }
+
+
+  .training-content h2 {
+
+    font-size: 28px;
+
+    letter-spacing: -0.7px;
+  }
+
+
+  .training-content p {
+
+    font-size: 14px;
+
+    line-height: 1.5;
+  }
+
+
+  .training-button {
+
+    padding: 11px 16px;
+
+    font-size: 14px;
+  }
+}
+
+
+/* =====================================================
+   QUICK ACCESS SECTION
+===================================================== */
+
+.quick-access {
+  width: 100%;
+
+  background: #ffffff;
+
+  padding: 42px 30px 70px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.quick-access-container {
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   QUICK ACCESS TITLE
+===================================================== */
+
+.quick-access-title {
+  margin: 0 0 42px;
+
+  padding: 0;
+
+  text-align: center;
+
+  color: #050505;
+
+  font-size: 34px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -0.6px;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.quick-access-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  column-gap: 14px;
+
+  row-gap: 30px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.quick-access-card {
+  min-height: 255px;
+
+  padding: 25px 20px 24px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 5px;
+
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.13);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =====================================================
+   FIRST ROW
+   3 CARDS
+===================================================== */
+
+.quick-access-card:nth-child(1),
+.quick-access-card:nth-child(2),
+.quick-access-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+
+/* =====================================================
+   SECOND ROW
+   2 CENTERED CARDS
+===================================================== */
+
+.quick-access-card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.quick-access-card:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+
+/* =====================================================
+   CARD HOVER
+===================================================== */
+
+.quick-access-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =====================================================
+   ICON CIRCLE
+===================================================== */
+
+.quick-access-icon {
+  width: 96px;
+
+  height: 96px;
+
+  margin-bottom: 17px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #eff8d9;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =====================================================
+   ICON IMAGE
+===================================================== */
+
+.quick-access-icon-image {
+  width: 55px;
+
+  height: 55px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.quick-access-card-title {
+  margin: 0 0 7px;
+
+  padding: 0;
+
+  color: #080808;
+
+  font-size: 19px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   CARD DESCRIPTION
+===================================================== */
+
+.quick-access-card-description {
+  max-width: 220px;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #171717;
+
+  font-size: 13.5px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .quick-access {
+    padding-left: 25px;
+
+    padding-right: 25px;
+  }
+
+  .quick-access-container {
+    max-width: 850px;
+  }
+
+  .quick-access-grid {
+    column-gap: 15px;
+
+    row-gap: 25px;
+  }
+
+  .quick-access-card {
+    min-height: 250px;
+
+    padding-left: 15px;
+
+    padding-right: 15px;
+  }
+
+  .quick-access-title {
+    font-size: 32px;
+  }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .quick-access {
+    padding-top: 38px;
+
+    padding-bottom: 60px;
+  }
+
+  .quick-access-container {
+    max-width: 700px;
+  }
+
+  .quick-access-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+
+  /* Remove desktop positioning */
+
+  .quick-access-card:nth-child(1),
+  .quick-access-card:nth-child(2),
+  .quick-access-card:nth-child(3),
+  .quick-access-card:nth-child(4),
+  .quick-access-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+
+  /* Last card centered */
+
+  .quick-access-card:nth-child(5) {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    max-width: 330px;
+
+    justify-self: center;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .quick-access {
+    padding: 35px 18px 50px;
+  }
+
+
+  .quick-access-title {
+    margin-bottom: 28px;
+
+    font-size: 28px;
+
+    letter-spacing: -0.3px;
+  }
+
+
+  .quick-access-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .quick-access-card:nth-child(1),
+  .quick-access-card:nth-child(2),
+  .quick-access-card:nth-child(3),
+  .quick-access-card:nth-child(4),
+  .quick-access-card:nth-child(5) {
+
+    grid-column: auto;
+
+    width: 100%;
+
+    max-width: 340px;
+
+    min-height: 235px;
+
+    justify-self: center;
+  }
+
+
+  .quick-access-icon {
+    width: 88px;
+
+    height: 88px;
+
+    margin-bottom: 15px;
+  }
+
+
+  .quick-access-icon-image {
+    width: 50px;
+
+    height: 50px;
+  }
+
+
+  .quick-access-card-title {
+    font-size: 19px;
+
+    margin-bottom: 7px;
+  }
+
+
+  .quick-access-card-description {
+    max-width: 260px;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .quick-access {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .quick-access-title {
+    font-size: 25px;
+  }
+
+
+  .quick-access-card {
+    padding: 22px 18px;
+  }
+
+
+  .quick-access-icon {
+    width: 82px;
+
+    height: 82px;
+  }
+
+
+  .quick-access-icon-image {
+    width: 46px;
+
+    height: 46px;
+  }
+}
+
+
+/* =====================================================
+   FEATURED LEARNING
+===================================================== */
+
+.featured-learning {
+  position: relative;
+
+  width: 100%;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  padding: 55px 30px 85px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.featured-learning-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   MAIN TITLE
+===================================================== */
+
+.featured-learning-title {
+  margin: 0 0 42px;
+
+  text-align: center;
+
+  color: #050505;
+
+  font-size: 34px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -0.7px;
+}
+
+
+/* =====================================================
+   SEARCH + FILTER AREA
+===================================================== */
+
+.featured-learning-toolbar {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 24px;
+}
+
+
+/* =====================================================
+   SEARCH BAR
+===================================================== */
+
+.learning-search {
+  width: 420px;
+
+  min-width: 500px;
+
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  border: 1px solid #777777;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SEARCH INPUT
+===================================================== */
+
+.learning-search input {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 0 15px;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #222222;
+
+  font-family: inherit;
+
+  font-size: 16px;
+}
+
+
+.learning-search input::placeholder {
+  color: #333333;
+font-size :16px;
+  opacity: 1;
+}
+
+
+/* =====================================================
+   SEARCH BUTTON
+===================================================== */
+
+.learning-search button {
+  width: 38px;
+
+  height: 100%;
+
+  padding: 0;
+
+  flex-shrink: 0;
+
+  border: none;
+
+  background: #00a94f;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: background 0.25s ease;
+}
+
+
+.learning-search button:hover {
+  background: #008d42;
+}
+
+
+.learning-search button span {
+  font-size: 21px;
+
+  line-height: 1;
+
+  transform: rotate(-20deg);
+}
+
+
+/* =====================================================
+   FILTER CONTAINER
+===================================================== */
+
+.learning-filters {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* =====================================================
+   FILTER BUTTON
+===================================================== */
+
+.learning-filter {
+  height: 32px;
+
+  padding: 0 18px;
+
+  min-width: 65px;
+
+  border: 1px solid #8a8a8a;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+
+/* =====================================================
+   INDIVIDUAL FILTER WIDTHS
+===================================================== */
+
+.learning-filter:nth-child(1) {
+  min-width: 60px;
+}
+
+.learning-filter:nth-child(2) {
+  min-width: 72px;
+}
+
+.learning-filter:nth-child(3) {
+  min-width: 80px;
+}
+
+.learning-filter:nth-child(4) {
+  min-width: 88px;
+}
+
+.learning-filter:nth-child(5) {
+  min-width: 88px;
+}
+
+.learning-filter:nth-child(6) {
+  min-width: 68px;
+}
+
+
+/* =====================================================
+   FILTER HOVER
+===================================================== */
+
+.learning-filter:hover {
+  border-color: #00a94f;
+
+  color: #00a94f;
+}
+
+
+/* =====================================================
+   ACTIVE FILTER
+===================================================== */
+
+.learning-filter.active {
+  min-width: 60px;
+
+  border-color: #00a94f;
+
+  background: #00a94f;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   LEARNING CARDS GRID
+===================================================== */
+
+.featured-learning-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+
+/* =====================================================
+   LEARNING CARD
+===================================================== */
+
+.featured-learning-card {
+  min-height: 292px;
+
+  padding: 24px 24px 20px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 5px;
+
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.16);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =====================================================
+   CARD HOVER
+===================================================== */
+
+.featured-learning-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =====================================================
+   ICON CIRCLE
+===================================================== */
+
+.featured-learning-icon {
+  width: 92px;
+
+  height: 92px;
+
+  margin-bottom: 15px;
+
+  border-radius: 50%;
+
+  background: #eff8d9;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =====================================================
+   ICON IMAGE
+===================================================== */
+
+.featured-learning-icon img {
+  width: 58px;
+
+  height: 58px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.featured-learning-card h3 {
+  margin: 0 0 6px;
+
+  color: #080808;
+
+  font-size: 19px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   CARD DESCRIPTION
+===================================================== */
+
+.featured-learning-card p {
+  max-width: 225px;
+
+  margin: 0;
+
+  color: #171717;
+
+  font-size: 13.5px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   LEARN MORE BUTTON
+===================================================== */
+
+.learning-more-button {
+  margin-top: auto;
+
+  padding: 7px 15px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: #00a94f;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  font-family: inherit;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.learning-more-button strong {
+  font-size: 16px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  transition: transform 0.3s ease;
+}
+
+
+.learning-more-button:hover {
+  background: #008d42;
+
+  transform: translateY(-1px);
+}
+
+
+.learning-more-button:hover strong {
+  transform: translateX(3px);
+}
+
+
+/* =====================================================
+   NO RESULTS
+===================================================== */
+
+.learning-no-results {
+  grid-column: 1 / -1;
+
+  min-height: 200px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #777777;
+
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   DECORATIVE LEAVES
+===================================================== */
+
+.featured-learning-leaf {
+  position: absolute;
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   LEFT DECORATIVE LEAF
+===================================================== */
+
+.featured-learning-leaf-left {
+  left: -5px;
+
+  bottom: 115px;
+
+  width: 90px;
+
+  height: 120px;
+}
+
+
+.featured-learning-leaf-left span {
+  position: absolute;
+
+  width: 38px;
+
+  height: 70px;
+
+  background: #70b72c;
+
+  border-radius: 100% 0 100% 0;
+
+  transform-origin: bottom center;
+}
+
+
+.featured-learning-leaf-left span:nth-child(1) {
+  left: 4px;
+
+  bottom: 10px;
+
+  transform: rotate(-65deg);
+}
+
+
+.featured-learning-leaf-left span:nth-child(2) {
+  left: 25px;
+
+  bottom: 5px;
+
+  transform: rotate(-25deg);
+}
+
+
+.featured-learning-leaf-left span:nth-child(3) {
+  left: 48px;
+
+  bottom: 8px;
+
+  transform: rotate(25deg);
+}
+
+
+/* =====================================================
+   RIGHT DECORATIVE LEAF
+===================================================== */
+
+.featured-learning-leaf-right {
+  right: -15px;
+
+  bottom: -15px;
+
+  width: 100px;
+
+  height: 130px;
+}
+
+
+.featured-learning-leaf-right span {
+  position: absolute;
+
+  width: 42px;
+
+  height: 75px;
+
+  background: #75b82a;
+
+  border-radius: 100% 0 100% 0;
+
+  transform-origin: bottom center;
+}
+
+
+.featured-learning-leaf-right span:nth-child(1) {
+  right: 5px;
+
+  bottom: 5px;
+
+  transform: rotate(65deg);
+}
+
+
+.featured-learning-leaf-right span:nth-child(2) {
+  right: 30px;
+
+  bottom: 8px;
+
+  transform: rotate(30deg);
+}
+
+
+.featured-learning-leaf-right span:nth-child(3) {
+  right: 50px;
+
+  bottom: 10px;
+
+  transform: rotate(-5deg);
+}
+
+
+/* =====================================================
+   TABLET - 1000px
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .featured-learning {
+    padding-left: 25px;
+
+    padding-right: 25px;
+  }
+
+
+  .featured-learning-container {
+    max-width: 900px;
+  }
+
+
+  .featured-learning-title {
+    font-size: 32px;
+
+    margin-bottom: 35px;
+  }
+
+
+  /* Search becomes flexible */
+
+  .learning-search {
+    width: 350px;
+
+    min-width: 350px;
+  }
+
+
+  .featured-learning-toolbar {
+    gap: 10px;
+  }
+
+
+  .learning-filters {
+    gap: 6px;
+  }
+
+
+  .learning-filter {
+    padding: 0 13px;
+
+    min-width: auto;
+
+    font-size: 9px;
+  }
+
+
+  .learning-filter:nth-child(1) {
+    min-width: 55px;
+  }
+
+
+  .learning-filter:nth-child(2) {
+    min-width: 65px;
+  }
+
+
+  .learning-filter:nth-child(3) {
+    min-width: 70px;
+  }
+
+
+  .learning-filter:nth-child(4) {
+    min-width: 78px;
+  }
+
+
+  .learning-filter:nth-child(5) {
+    min-width: 78px;
+  }
+
+
+  .learning-filter:nth-child(6) {
+    min-width: 60px;
+  }
+
+
+  .featured-learning-grid {
+    gap: 18px;
+  }
+}
+
+
+/* =====================================================
+   SMALL TABLET - 800px
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .featured-learning {
+    padding-top: 45px;
+
+    padding-bottom: 70px;
+  }
+
+
+  .featured-learning-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+
+  .featured-learning-card:nth-child(3) {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    max-width: 330px;
+
+    justify-self: center;
+  }
+
+
+  /* Search */
+
+  .featured-learning-toolbar {
+    flex-wrap: wrap;
+
+    gap: 12px;
+  }
+
+
+  .learning-search {
+    width: 100%;
+
+    min-width: 100%;
+
+    flex: none;
+  }
+
+
+  /* Filters */
+
+  .learning-filters {
+    width: 100%;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+  }
+
+
+  .learning-filter {
+    height: 30px;
+
+    padding: 0 16px;
+
+    font-size: 10px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE - 600px
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .featured-learning {
+    padding: 38px 18px 60px;
+  }
+
+
+  .featured-learning-title {
+    font-size: 28px;
+
+    margin-bottom: 28px;
+  }
+
+
+  /* ===================================================
+     SEARCH
+  =================================================== */
+
+  .featured-learning-toolbar {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    margin-bottom: 22px;
+  }
+
+
+  .learning-search {
+    width: 100%;
+
+    min-width: 100%;
+
+    height: 36px;
+  }
+
+
+  .learning-search input {
+    font-size: 11px;
+
+    padding-left: 12px;
+  }
+
+
+  .learning-search button {
+    width: 44px;
+  }
+
+
+  /* ===================================================
+     FILTERS
+  =================================================== */
+
+  .learning-filters {
+    width: 100%;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+  }
+
+
+  .learning-filter {
+    min-width: auto;
+
+    height: 30px;
+
+    padding: 0 15px;
+
+    font-size: 10px;
+  }
+
+
+  /* ===================================================
+     CARDS
+  =================================================== */
+
+  .featured-learning-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .featured-learning-card,
+  .featured-learning-card:nth-child(3) {
+    width: 100%;
+
+    max-width: 340px;
+
+    min-height: 285px;
+
+    grid-column: auto;
+
+    justify-self: center;
+  }
+
+
+  .featured-learning-icon {
+    width: 88px;
+
+    height: 88px;
+  }
+
+
+  .featured-learning-icon img {
+    width: 55px;
+
+    height: 55px;
+  }
+
+
+  .featured-learning-card h3 {
+    font-size: 19px;
+  }
+
+
+  .featured-learning-card p {
+    font-size: 13px;
+  }
+
+
+  /* ===================================================
+     MOBILE LEAVES
+  =================================================== */
+
+  .featured-learning-leaf-left {
+    left: -20px;
+
+    bottom: 120px;
+
+    transform: scale(0.8);
+  }
+
+
+  .featured-learning-leaf-right {
+    right: -25px;
+
+    bottom: -10px;
+
+    transform: scale(0.8);
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 400px
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .featured-learning {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .featured-learning-title {
+    font-size: 25px;
+  }
+
+
+  .featured-learning-card {
+    padding: 22px 18px 20px;
+  }
+
+
+  .featured-learning-icon {
+    width: 82px;
+
+    height: 82px;
+  }
+
+
+  .featured-learning-icon img {
+    width: 50px;
+
+    height: 50px;
+  }
+
+
+  .learning-filter {
+    padding: 0 13px;
+
+    font-size: 9px;
+  }
+}
+
+/* =====================================================
+   KEEP LEARNING SECTION
+===================================================== */
+
+.keep-learning {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 360px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border-bottom: 1px solid #d5d5d5;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.keep-learning-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 60px 30px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.keep-learning-content h2 {
+  margin: 0 0 24px;
+
+  padding: 0;
+
+  color: #050505;
+
+  font-size: 36px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.keep-learning-content p {
+  margin: 0 0 28px;
+
+  padding: 0;
+
+  color: #151515;
+
+  font-size: 21px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.keep-learning-button {
+  min-width: 192px;
+
+  height: 42px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 22px;
+
+  background: #00a94f;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.keep-learning-button span {
+  white-space: nowrap;
+}
+
+
+.keep-learning-button strong {
+  font-size: 23px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  transition: transform 0.3s ease;
+}
+
+
+.keep-learning-button:hover {
+  background: #008d42;
+
+  transform: translateY(-2px);
+}
+
+
+.keep-learning-button:hover strong {
+  transform: translateX(4px);
+}
+
+
+/* =====================================================
+   DECORATIVE LEAVES
+===================================================== */
+
+.keep-learning-leaf {
+  position: absolute;
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   LEFT LEAF
+===================================================== */
+
+.keep-learning-leaf-left {
+  left: 0;
+
+  top: 70px;
+
+  width: 100px;
+
+  height: 140px;
+}
+
+
+.keep-learning-leaf-left img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  object-position: left center;
+
+  display: block;
+}
+
+
+/* =====================================================
+   RIGHT LEAF
+===================================================== */
+
+.keep-learning-leaf-right {
+  right: 0;
+
+  bottom: -5px;
+
+  width: 100px;
+
+  height: 140px;
+}
+
+
+.keep-learning-leaf-right img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  object-position: right bottom;
+
+  display: block;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .keep-learning {
+    min-height: 340px;
+  }
+
+
+  .keep-learning-content {
+    max-width: 900px;
+
+    padding: 55px 30px;
+  }
+
+
+  .keep-learning-content h2 {
+    font-size: 33px;
+  }
+
+
+  .keep-learning-content p {
+    font-size: 19px;
+  }
+
+
+  .keep-learning-leaf-left {
+    left: -10px;
+
+    top: 65px;
+
+    width: 90px;
+
+    height: 125px;
+  }
+
+
+  .keep-learning-leaf-right {
+    right: -10px;
+
+    width: 90px;
+
+    height: 125px;
+  }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .keep-learning {
+    min-height: 320px;
+  }
+
+
+  .keep-learning-content {
+    padding: 50px 25px;
+  }
+
+
+  .keep-learning-content h2 {
+    font-size: 30px;
+
+    letter-spacing: -0.7px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .keep-learning-content p {
+    max-width: 650px;
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .keep-learning-leaf-left {
+    width: 75px;
+
+    height: 110px;
+
+    left: -10px;
+
+    top: 65px;
+  }
+
+
+  .keep-learning-leaf-right {
+    width: 75px;
+
+    height: 110px;
+
+    right: -10px;
+
+    bottom: -5px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .keep-learning {
+    min-height: 350px;
+  }
+
+
+  .keep-learning-content {
+    padding: 55px 25px;
+  }
+
+
+  .keep-learning-content h2 {
+    font-size: 27px;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.5px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .keep-learning-content p {
+    max-width: 500px;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+  }
+
+
+  .keep-learning-button {
+    min-width: 180px;
+
+    height: 40px;
+
+    font-size: 13px;
+  }
+
+
+  .keep-learning-button strong {
+    font-size: 21px;
+  }
+
+
+  /* LEFT LEAF */
+
+  .keep-learning-leaf-left {
+    width: 65px;
+
+    height: 95px;
+
+    left: -15px;
+
+    top: 45px;
+  }
+
+
+  /* RIGHT LEAF */
+
+  .keep-learning-leaf-right {
+    width: 65px;
+
+    height: 95px;
+
+    right: -15px;
+
+    bottom: -5px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .keep-learning {
+    min-height: 330px;
+  }
+
+
+  .keep-learning-content {
+    padding: 45px 20px;
+  }
+
+
+  .keep-learning-content h2 {
+    font-size: 24px;
+  }
+
+
+  .keep-learning-content p {
+    font-size: 15px;
+
+    line-height: 1.45;
+  }
+
+
+  .keep-learning-button {
+    min-width: 170px;
+
+    height: 38px;
+
+    font-size: 12px;
+  }
+
+
+  .keep-learning-leaf-left {
+    width: 55px;
+
+    height: 80px;
+
+    left: -18px;
+  }
+
+
+  .keep-learning-leaf-right {
+    width: 55px;
+
+    height: 80px;
+
+    right: -18px;
+  }
+}

@@ -71,11 +71,13 @@ export default function Navbar() {
           Plan
         </Link>
 
-        <Link href="#training">
+        <Link href="/Training"
+         className={pathname === "/Training" ? "active" : ""}>
           Training
         </Link>
 
-        <Link href="#events">
+        <Link href="/Event"
+         className={pathname === "/Event" ? "active" : ""}>
           Events
         </Link>
 
@@ -188,28 +190,32 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/opportunities"
+            href="/Opportunities"
+             className={pathname === "/Opportunities" ? "active" : ""}
             onClick={closeMobileMenu}
           >
             Opportunities
           </Link>
 
           <Link
-            href="/plan"
+            href="/Plans"
+             className={pathname === "/Plans" ? "active" : ""}
             onClick={closeMobileMenu}
           >
             Plan
           </Link>
 
           <Link
-            href="#training"
+            href="/Training"
+             className={pathname === "/Training" ? "active" : ""}
             onClick={closeMobileMenu}
           >
             Training
           </Link>
 
           <Link
-            href="#events"
+            href="/Event"
+             className={pathname === "/Event" ? "active" : ""}
             onClick={closeMobileMenu}
           >
             Events

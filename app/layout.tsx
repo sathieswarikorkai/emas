@@ -5,6 +5,8 @@ import "./style/globals.css";
 import "./style/about.css";
 import "./style/opportunities.css";
 import "./style/plans.css";
+import "./style/training.css";
+import "./style/event.css";
 
 const inter = Inter({
   variable: "--font-inter",

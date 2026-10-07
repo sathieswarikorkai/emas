@@ -1,0 +1,4135 @@
+/* =====================================================
+   EVENTS HERO
+===================================================== */
+
+.events-hero {
+  width: 100%;
+
+  min-height: 760px;
+
+  background: #ffffff;
+
+  padding: 36px 30px 80px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.events-hero-content {
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.events-hero-content h1 {
+  margin: 0;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  color: #050505;
+
+  font-size: 48px;
+
+  line-height: 1.02;
+
+  font-weight: 800;
+
+  letter-spacing: -1.8px;
+}
+
+
+.events-hero-content h1 span:last-child {
+  color: #00a94f;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.events-hero-content > p {
+  margin: 23px auto 17px;
+
+  max-width: 850px;
+
+  color: #686868;
+
+  font-size: 17px;
+
+  line-height: 1.45;
+
+  font-weight: 400;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   BUTTON CONTAINER
+===================================================== */
+
+.events-hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   PRIMARY BUTTON
+===================================================== */
+
+.events-primary-button {
+  min-width: 190px;
+
+  height: 42px;
+
+  padding: 0 17px;
+
+  border: 2px solid #00a94f;
+
+  border-radius: 25px;
+
+  background: #00a94f;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+.events-primary-button strong {
+  font-size: 20px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  transition: transform 0.3s ease;
+}
+
+
+.events-primary-button:hover {
+  background: #008d42;
+
+  border-color: #008d42;
+
+  transform: translateY(-2px);
+}
+
+
+.events-primary-button:hover strong {
+  transform: translateX(4px);
+}
+
+
+/* =====================================================
+   SECONDARY BUTTON
+===================================================== */
+
+.events-secondary-button {
+  min-width: 190px;
+
+  height: 42px;
+
+  padding: 0 20px;
+
+  border: 2px solid #00a94f;
+
+  border-radius: 25px;
+
+  background: #ffffff;
+
+  color: #00a94f;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+.events-secondary-button:hover {
+  background: #00a94f;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   FEATURED EVENT IMAGE
+===================================================== */
+
+.featured-event-image-wrapper {
+  position: relative;
+
+  width: 70%;
+
+  max-width: 2000px;
+
+  height: 300px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  border-radius: 7px;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.featured-event-image {
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* =====================================================
+   FLOATING EVENT CARD
+===================================================== */
+
+.featured-event-card {
+  position: absolute;
+
+  right: 25px;
+
+  bottom: 12px;
+
+  width: 245px;
+
+  min-height: 68px;
+
+  padding: 10px 12px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border-radius: 5px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  z-index: 3;
+}
+
+
+/* =====================================================
+   EVENT DETAILS
+===================================================== */
+
+.featured-event-details {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+.featured-event-label {
+  margin-bottom: 3px;
+
+  color: #00a94f;
+
+  font-size: 8px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+
+.featured-event-details h3 {
+  margin: 0 0 3px;
+
+  color: #101010;
+
+  font-size: 12px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+}
+
+
+.featured-event-details p {
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 9px;
+
+  line-height: 1.2;
+}
+
+
+/* =====================================================
+   EVENT ARROW BUTTON
+===================================================== */
+
+.featured-event-arrow {
+  width: 27px;
+
+  height: 27px;
+
+  flex-shrink: 0;
+
+  margin-left: 8px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #00a94f;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: transform 0.25s ease;
+}
+
+
+.featured-event-arrow:hover {
+  transform: scale(1.08);
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .events-hero {
+    padding-left: 25px;
+
+    padding-right: 25px;
+  }
+
+
+  .events-hero-content h1 {
+    font-size: 43px;
+  }
+
+
+  .featured-event-image-wrapper {
+    max-width: 900px;
+
+    height: 250px;
+  }
+
+
+ 
+
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .events-hero {
+    padding-top: 32px;
+
+    min-height: auto;
+
+    padding-bottom: 60px;
+  }
+
+
+  .events-hero-content h1 {
+    font-size: 38px;
+  }
+
+
+  .events-hero-content > p {
+    font-size: 16px;
+
+    margin-top: 20px;
+  }
+
+
+  .featured-event-image-wrapper {
+    height: 240px;
+  }
+
+
+  .featured-event-card {
+    right: 15px;
+
+    bottom: 12px;
+  }
+
+
+  .upcoming-events-heading-row {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .upcoming-events-heading-row h2 {
+    font-size: 34px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .events-hero {
+    padding: 30px 18px 55px;
+  }
+
+
+  .events-hero-content h1 {
+    font-size: 31px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .events-hero-content > p {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin: 18px auto 20px;
+  }
+
+
+  /* =========================================
+     BUTTONS
+  ========================================= */
+
+  .events-hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .events-primary-button,
+  .events-secondary-button {
+    width: 220px;
+
+    min-width: 220px;
+
+    height: 42px;
+  }
+
+
+  /* =========================================
+     IMAGE
+  ========================================= */
+
+  .featured-event-image-wrapper {
+    height: 240px;
+
+    border-radius: 7px;
+  }
+
+
+  .featured-event-image {
+    object-position: center;
+  }
+
+
+  /* =========================================
+     EVENT CARD
+  ========================================= */
+
+  .featured-event-card {
+    right: 10px;
+
+    bottom: 10px;
+
+    width: calc(100% - 20px);
+
+    min-height: 62px;
+  }
+
+
+  .featured-event-details h3 {
+    font-size: 11px;
+  }
+
+
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .events-hero {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .events-hero-content h1 {
+    font-size: 28px;
+  }
+
+
+  .events-hero-content > p {
+    font-size: 14px;
+  }
+
+
+  .featured-event-image-wrapper {
+    height: 220px;
+  }
+
+
+  .featured-event-card {
+    padding: 8px 10px;
+  }
+
+
+  .featured-event-details h3 {
+    font-size: 10px;
+  }
+
+
+  .featured-event-details p {
+    font-size: 8px;
+  }
+
+
+  .upcoming-events-heading-row h2 {
+    font-size: 26px;
+  }
+}
+
+
+/* =====================================================
+   UPCOMING EVENTS
+===================================================== */
+
+.upcoming-events {
+  position: relative;
+
+  width: 100%;
+
+  margin-top: -170px;
+
+  background: #ffffff;
+
+  padding: 15px 30px 75px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.upcoming-events-container {
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.upcoming-events-header {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-bottom: 28px;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.upcoming-events-heading {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+/* =====================================================
+   SMALL LABEL
+===================================================== */
+
+.upcoming-events-label {
+  margin-bottom: 10px;
+
+  color: #00a94f;
+
+  font-size: 16px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1px;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.upcoming-events-heading h2 {
+  margin: 0;
+
+  padding: 0;
+
+  color: #050505;
+
+  font-size: 40px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* =====================================================
+   FILTER CONTAINER
+===================================================== */
+
+.upcoming-events-filters {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+}
+
+
+/* =====================================================
+   FILTER BUTTON
+===================================================== */
+
+.upcoming-event-filter {
+  height: 30px;
+
+  min-width: 90px;
+
+  padding: 0 17px;
+
+  border: 1px solid #00a94f;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+
+/* =====================================================
+   INDIVIDUAL FILTER WIDTHS
+===================================================== */
+
+.upcoming-event-filter:nth-child(1) {
+  min-width: 70px;
+}
+
+.upcoming-event-filter:nth-child(2) {
+  min-width: 75px;
+}
+
+.upcoming-event-filter:nth-child(3) {
+  min-width: 65px;
+}
+
+.upcoming-event-filter:nth-child(4) {
+  min-width: 78px;
+}
+
+
+/* =====================================================
+   FILTER HOVER
+===================================================== */
+
+.upcoming-event-filter:hover {
+  background: #00a94f;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   ACTIVE FILTER
+===================================================== */
+
+.upcoming-event-filter.active {
+  background: #00a94f;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   EVENT GRID
+===================================================== */
+
+.upcoming-events-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+
+/* =====================================================
+   EVENT CARD
+===================================================== */
+
+.upcoming-event-card {
+  width: 100%;
+
+  min-height: 400px;
+   
+  height :100%;
+  min-height: 350px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e8;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+
+  flex-direction: column;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.upcoming-event-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   EVENT IMAGE
+===================================================== */
+
+.upcoming-event-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 175px;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.upcoming-event-image-img {
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+
+.upcoming-event-card:hover
+.upcoming-event-image-img {
+  transform: scale(1.03);
+}
+
+
+/* =====================================================
+   DATE BADGE
+===================================================== */
+
+.event-date-badge {
+  position: absolute;
+
+  top: 8px;
+
+  left: 8px;
+
+  width: 44px;
+
+  height: 48px;
+
+  background: #ffffff;
+
+  border-radius: 3px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.12);
+
+  z-index: 2;
+}
+
+
+.event-date-badge strong {
+  color: #101010;
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+
+.event-date-badge span {
+  margin-top: 2px;
+
+  color: #00a94f;
+
+  font-size: 10px;
+
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   CARD CONTENT
+===================================================== */
+
+.upcoming-event-content {
+  position: relative;
+
+  padding: 10px 12px 12px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+}
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
+
+.event-category {
+  width: fit-content;
+
+  min-width: 58px;
+
+  height: 17px;
+
+  padding: 0 10px;
+
+  margin-bottom: 7px;
+
+  border-radius: 4px;
+
+  background: #e8f3d9;
+
+  color: #00a94f;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 14px;
+
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   EVENT TITLE
+===================================================== */
+
+.upcoming-event-content h3 {
+  margin: 0 0 8px;
+
+  color: #111111;
+
+  font-size: 18px;
+
+  line-height: 1.2;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   EVENT INFO
+===================================================== */
+
+.event-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 5px;
+
+  color: #222222;
+
+  font-size: 16px;
+
+  line-height: 1.2;
+}
+
+
+/* =====================================================
+   INFO ICON
+===================================================== */
+
+.event-info-icon {
+  width: 13px;
+
+  flex-shrink: 0;
+
+  color: #777777;
+
+  font-size: 20px;
+
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   REGISTER BUTTON
+===================================================== */
+
+.register-event-button {
+  width: 100%;
+
+  height: 36px;
+
+  margin-top: 8px;
+
+  padding: 0 15px;
+
+  border: none;
+
+  border-radius: 3px;
+
+  background: #00a94f;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+
+.register-event-button strong {
+  font-size: 20px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  transition: transform 0.25s ease;
+}
+
+
+.register-event-button:hover {
+  background: #008d42;
+}
+
+
+.register-event-button:hover strong {
+  transform: translate(3px, -2px);
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.upcoming-events-empty {
+  grid-column: 1 / -1;
+
+  min-height: 220px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #777777;
+
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .upcoming-events {
+    padding-left: 25px;
+
+    padding-right: 25px;
+  }
+
+
+  .upcoming-events-container {
+    max-width: 900px;
+  }
+
+
+  .upcoming-events-heading h2 {
+    font-size: 36px;
+  }
+
+
+  .upcoming-events-header {
+    gap: 15px;
+  }
+
+
+  .upcoming-events-filters {
+    gap: 5px;
+  }
+
+
+  .upcoming-event-filter {
+    padding: 0 13px;
+
+    min-width: auto;
+
+    font-size: 8px;
+  }
+
+
+  .upcoming-event-image {
+    height: 160px;
+  }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .upcoming-events {
+    padding-top: 30px;
+
+    padding-bottom: 60px;
+  }
+
+
+  .upcoming-events-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+  }
+
+
+  .upcoming-events-heading h2 {
+    font-size: 34px;
+  }
+
+
+  .upcoming-events-filters {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+
+  .upcoming-events-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+  }
+
+
+  .upcoming-event-image {
+    height: 175px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .upcoming-events {
+    padding: 30px 18px 55px;
+  }
+
+
+  .upcoming-events-container {
+    max-width: 100%;
+  }
+
+
+  .upcoming-events-heading h2 {
+    font-size: 29px;
+
+    letter-spacing: -0.8px;
+  }
+
+
+  .upcoming-events-label {
+    font-size: 9px;
+
+    margin-bottom: 8px;
+  }
+
+
+  /* =========================================
+     FILTERS
+  ========================================= */
+
+  .upcoming-events-filters {
+    width: 100%;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+  }
+
+
+  .upcoming-event-filter {
+    height: 29px;
+
+    min-width: auto !important;
+
+    padding: 0 15px;
+
+    font-size: 9px;
+  }
+
+
+  /* =========================================
+     GRID
+  ========================================= */
+
+  .upcoming-events-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  .upcoming-event-card {
+    width: 100%;
+
+    max-width: 380px;
+
+    justify-self: center;
+  }
+
+
+  .upcoming-event-image {
+    height: 210px;
+  }
+
+
+  .event-date-badge {
+    width: 48px;
+
+    height: 52px;
+
+    top: 10px;
+
+    left: 10px;
+  }
+
+
+  .event-date-badge strong {
+    font-size: 19px;
+  }
+
+
+  .event-date-badge span {
+    font-size: 10px;
+  }
+
+
+  .upcoming-event-content {
+    padding: 11px 13px 13px;
+  }
+
+
+  .upcoming-event-content h3 {
+    font-size: 16px;
+  }
+
+
+  .event-info {
+    font-size: 10px;
+
+    margin-bottom: 6px;
+  }
+
+
+  .register-event-button {
+    height: 38px;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .upcoming-events {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .upcoming-events-heading h2 {
+    font-size: 26px;
+  }
+
+
+  .upcoming-event-image {
+    height: 195px;
+  }
+
+
+  .upcoming-event-content h3 {
+    font-size: 15px;
+  }
+}
+
+
+/* =====================================================
+   PAST HIGHLIGHTS
+===================================================== */
+
+.past-highlights {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 510px;
+
+  background: #e8f7f0;
+
+  overflow: hidden;
+
+  padding: 65px 30px 70px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   TOP CURVE
+===================================================== */
+
+.past-highlights-top-curve {
+  position: absolute;
+
+  top: -45px;
+
+  left: -5%;
+
+  width: 110%;
+
+  height: 85px;
+
+  background: #ffffff;
+
+  border-radius: 0 0 50% 50%;
+
+  z-index: 1;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.past-highlights-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.past-highlights-header {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 24px;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.past-highlights-heading {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+/* =====================================================
+   SMALL LABEL
+===================================================== */
+
+.past-highlights-label {
+  margin-bottom: 10px;
+
+  color: #00a94f;
+
+  font-size: 9px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.past-highlights-heading h2 {
+  margin: 0;
+
+  color: #050505;
+
+  font-size: 43px;
+
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* =====================================================
+   SUBTITLE
+===================================================== */
+
+.past-highlights-heading p {
+  margin: 3px 0 0;
+
+  color: #666666;
+
+  font-size: 17px;
+
+  line-height: 1.3;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   VIEW ALL BUTTON
+===================================================== */
+
+.view-highlights-button {
+  margin-top: 39px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #00a94f;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: color 0.25s ease;
+}
+
+
+.view-highlights-button:hover {
+  color: #008d42;
+
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.past-highlights-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 80px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.past-highlight-card {
+  position: relative;
+
+  width: 100%;
+
+  border-radius: 8px;
+
+  overflow: visible;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.past-highlight-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 220px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+
+.past-highlight-image-img {
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+
+.past-highlight-card:hover
+.past-highlight-image-img {
+  transform: scale(1.03);
+}
+
+
+/* =====================================================
+   WHITE CONTENT CARD
+===================================================== */
+
+.past-highlight-content {
+  position: relative;
+
+  width: calc(100% - 2px);
+
+  min-height: 83px;
+
+  margin: -1px auto 0;
+
+  padding: 13px 14px 11px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border-radius: 0 0 9px 9px;
+
+  z-index: 3;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.past-highlight-content h3 {
+  margin: 0 0 5px;
+
+  color: #111111;
+
+  font-size: 22px;
+
+  line-height: 1.15;
+
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.past-highlight-date {
+  margin: 0 0 8px;
+
+  color: #222222;
+
+  font-size: 18px;
+
+  line-height: 1.2;
+
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   REGISTER
+===================================================== */
+
+.past-highlight-register {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #00a94f;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.past-highlight-register:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .past-highlights {
+    padding-left: 25px;
+
+    padding-right: 25px;
+  }
+
+
+  .past-highlights-container {
+    max-width: 900px;
+  }
+
+
+  .past-highlights-grid {
+    gap: 45px;
+  }
+
+
+  .past-highlights-heading h2 {
+    font-size: 39px;
+  }
+
+
+  .past-highlight-image {
+    height: 200px;
+  }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .past-highlights {
+    padding-top: 60px;
+
+    padding-bottom: 60px;
+  }
+
+
+  .past-highlights-header {
+    align-items: flex-end;
+  }
+
+
+  .past-highlights-heading h2 {
+    font-size: 35px;
+  }
+
+
+  .past-highlights-heading p {
+    font-size: 15px;
+  }
+
+
+  .past-highlights-grid {
+    gap: 25px;
+  }
+
+
+  .past-highlight-image {
+    height: 180px;
+  }
+
+
+  .past-highlight-content h3 {
+    font-size: 15px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .past-highlights {
+    padding: 55px 18px 55px;
+  }
+
+
+  .past-highlights-top-curve {
+    top: -30px;
+
+    height: 60px;
+  }
+
+
+  .past-highlights-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .past-highlights-heading h2 {
+    font-size: 30px;
+
+    letter-spacing: -0.8px;
+  }
+
+
+  .past-highlights-heading p {
+    font-size: 14px;
+  }
+
+
+  .view-highlights-button {
+    margin-top: 0;
+
+    font-size: 13px;
+  }
+
+
+  /* =========================================
+     GRID
+  ========================================= */
+
+  .past-highlights-grid {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+
+  .past-highlight-card {
+    width: 100%;
+
+    max-width: 400px;
+
+    margin: 0 auto;
+  }
+
+
+  .past-highlight-image {
+    height: 210px;
+  }
+
+
+  .past-highlight-content {
+    min-height: 85px;
+
+    padding: 13px 14px 12px;
+  }
+
+
+  .past-highlight-content h3 {
+    font-size: 16px;
+  }
+
+
+  .past-highlight-date {
+    font-size: 9px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .past-highlights {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .past-highlights-heading h2 {
+    font-size: 27px;
+  }
+
+
+  .past-highlights-heading p {
+    font-size: 13px;
+  }
+
+
+  .past-highlight-image {
+    height: 195px;
+  }
+
+
+  .past-highlight-content h3 {
+    font-size: 15px;
+  }
+}
+
+
+/* =====================================================
+   ACHIEVEMENTS SECTION
+===================================================== */
+
+.achievements-section {
+  position: relative;
+
+  width: 100%;
+
+  background: #ffffff;
+
+  padding: 48px 30px 38px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.achievements-container {
+  width: 100%;
+
+  max-width: 1080px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.achievements-header {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   GREEN LABEL
+===================================================== */
+
+.achievements-label {
+  margin-bottom: 14px;
+
+  color: #00a94f;
+
+  font-size: 18px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.achievements-header h2 {
+  position: relative;
+
+  margin: 0;
+
+  color: #050505;
+
+  font-size: 49px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+
+/* Small decorative arrow */
+
+.achievements-header h2::after {
+  content: "↗";
+
+  position: absolute;
+
+  right: 40px;
+
+  bottom: -7px;
+
+  color: #00a94f;
+
+  font-size: 19px;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   SUBTITLE
+===================================================== */
+
+.achievements-header p {
+  margin: 9px 0 0;
+
+  color: #666666;
+
+  font-size: 17px;
+
+  line-height: 1.3;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   ACHIEVEMENT GRID
+===================================================== */
+
+.achievements-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-bottom: 80px;
+}
+
+
+/* =====================================================
+   ACHIEVEMENT CARD
+===================================================== */
+
+.achievement-card {
+  width: 100%;
+
+  min-height: 166px;
+
+  padding: 11px 13px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+/* =====================================================
+   MEMBER IMAGE
+===================================================== */
+
+.achievement-member-image {
+  position: relative;
+
+  width: 148px;
+
+  height: 145px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+}
+
+
+.achievement-member-img {
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* =====================================================
+   ACHIEVEMENT CONTENT
+===================================================== */
+
+.achievement-content {
+  flex: 1;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+}
+
+
+/* =====================================================
+   MEDAL
+===================================================== */
+
+.achievement-medal {
+  width: 78px;
+
+  height: 105px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+}
+
+
+/* =====================================================
+   MEDAL RIBBON
+===================================================== */
+
+.medal-ribbon {
+  width: 52px;
+
+  height: 36px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 0;
+}
+
+
+.medal-ribbon span {
+  width: 17px;
+
+  height: 35px;
+
+  background: #ffffff;
+
+  border: 3px solid #d9a91c;
+
+  display: block;
+}
+
+
+.medal-ribbon span:first-child {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    75% 100%,
+    50% 80%,
+    25% 100%
+  );
+}
+
+
+.medal-ribbon span:last-child {
+  margin-left: -3px;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    75% 100%,
+    50% 80%,
+    25% 100%
+  );
+}
+
+
+/* =====================================================
+   MEDAL CIRCLE
+===================================================== */
+
+.medal-circle {
+  width: 52px;
+
+  height: 52px;
+
+  margin-top: -2px;
+
+  border: 3px solid #d9a91c;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.medal-circle span {
+  color: #d9a91c;
+
+  font-size: 28px;
+
+  line-height: 1;
+}
+
+
+/* =====================================================
+   DETAILS
+===================================================== */
+
+.achievement-details {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.achievement-status {
+  min-width: 108px;
+
+  height: 26px;
+
+  padding: 0 9px;
+
+  margin-bottom: 12px;
+
+  box-sizing: border-box;
+
+  border-radius: 15px;
+
+  background: #00a94f;
+
+  color: #ffffff;
+
+  font-size: 7px;
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5px;
+}
+
+
+.achievement-status span {
+  width: 13px;
+
+  height: 13px;
+
+  border: 1px solid #ffffff;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 8px;
+}
+
+
+/* =====================================================
+   RANK LABEL
+===================================================== */
+
+.achievement-rank-label {
+  margin-bottom: 6px;
+
+  color: #555555;
+
+  font-size: 10px;
+
+  line-height: 1;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   MEMBER NAME
+===================================================== */
+
+.achievement-details h3 {
+  margin: 0 0 5px;
+
+  color: #111111;
+
+  font-size: 17px;
+
+  line-height: 1.1;
+
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   RANK
+===================================================== */
+
+.achievement-rank {
+  margin: 0 0 8px;
+
+  color: #666666;
+
+  font-size: 13px;
+
+  line-height: 1.2;
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.achievement-date {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #111111;
+
+  font-size: 10px;
+
+  line-height: 1.2;
+}
+
+
+.achievement-calendar {
+  color: #bdbdbd;
+
+  font-size: 18px;
+
+  line-height: 1;
+}
+
+
+.achievement-date strong {
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   BOTTOM CTA
+===================================================== */
+
+.achievement-cta {
+  width: 100%;
+
+  min-height: 155px;
+
+  padding: 42px 85px;
+
+  box-sizing: border-box;
+
+  background: #e5f5ef;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  justify-content: center;
+}
+
+
+/* =====================================================
+   CTA HEADING
+===================================================== */
+
+.achievement-cta h3 {
+  margin: 0 0 5px;
+
+  color: #050505;
+
+  font-size: 36px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -1.3px;
+}
+
+
+/* =====================================================
+   CTA DESCRIPTION
+===================================================== */
+
+.achievement-cta p {
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 17px;
+
+  line-height: 1.35;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .achievements-section {
+    padding-left: 25px;
+
+    padding-right: 25px;
+  }
+
+
+  .achievements-container {
+    max-width: 900px;
+  }
+
+
+  .achievements-header h2 {
+    font-size: 43px;
+  }
+
+
+  .achievement-card {
+    gap: 13px;
+  }
+
+
+  .achievement-member-image {
+    width: 125px;
+
+    height: 130px;
+  }
+
+
+  .achievement-content {
+    gap: 12px;
+  }
+
+
+  .achievement-medal {
+    width: 65px;
+  }
+
+
+  .achievement-cta {
+    padding-left: 60px;
+
+    padding-right: 60px;
+  }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .achievements-section {
+    padding-top: 42px;
+
+    padding-bottom: 35px;
+  }
+
+
+  .achievements-header h2 {
+    font-size: 38px;
+  }
+
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 55px;
+  }
+
+
+  .achievement-card {
+    min-height: 155px;
+  }
+
+
+  .achievement-member-image {
+    width: 140px;
+
+    height: 130px;
+  }
+
+
+  .achievement-cta {
+    min-height: 145px;
+
+    padding: 35px 45px;
+  }
+
+
+  .achievement-cta h3 {
+    font-size: 31px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .achievements-section {
+    padding: 38px 18px 30px;
+  }
+
+
+  .achievements-label {
+    font-size: 10px;
+
+    margin-bottom: 11px;
+  }
+
+
+  .achievements-header h2 {
+    font-size: 31px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+  }
+
+
+  .achievements-header h2::after {
+    right: 15px;
+
+    font-size: 15px;
+  }
+
+
+  .achievements-header p {
+    font-size: 14px;
+
+    margin-top: 7px;
+  }
+
+
+  /* ===================================================
+     CARD
+  =================================================== */
+
+  .achievement-card {
+    min-height: auto;
+
+    padding: 10px;
+
+    gap: 10px;
+
+    align-items: flex-start;
+  }
+
+
+  .achievement-member-image {
+    width: 105px;
+
+    height: 115px;
+  }
+
+
+  .achievement-content {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+
+  .achievement-medal {
+    position: absolute;
+
+    display: none;
+  }
+
+
+  .achievement-status {
+    height: 23px;
+
+    min-width: 105px;
+
+    margin-bottom: 2px;
+  }
+
+
+  .achievement-rank-label {
+    font-size: 9px;
+
+    margin-bottom: 3px;
+  }
+
+
+  .achievement-details h3 {
+    font-size: 15px;
+
+    margin-bottom: 3px;
+  }
+
+
+  .achievement-rank {
+    font-size: 11px;
+
+    margin-bottom: 5px;
+  }
+
+
+  .achievement-date {
+    gap: 5px;
+
+    font-size: 8px;
+  }
+
+
+  .achievement-calendar {
+    font-size: 15px;
+  }
+
+
+  .achievement-date strong {
+    font-size: 8px;
+  }
+
+
+  /* ===================================================
+     CTA
+  =================================================== */
+
+  .achievement-cta {
+    min-height: 145px;
+
+    padding: 30px 25px;
+  }
+
+
+  .achievement-cta h3 {
+    font-size: 27px;
+
+    letter-spacing: -0.7px;
+  }
+
+
+  .achievement-cta p {
+    font-size: 14px;
+
+    line-height: 1.45;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .achievements-section {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .achievements-header h2 {
+    font-size: 27px;
+  }
+
+
+  .achievement-member-image {
+    width: 90px;
+
+    height: 105px;
+  }
+
+
+  .achievement-card {
+    padding: 8px;
+  }
+
+
+  .achievement-details h3 {
+    font-size: 14px;
+  }
+
+
+  .achievement-cta {
+    padding: 28px 20px;
+  }
+
+
+  .achievement-cta h3 {
+    font-size: 24px;
+  }
+
+
+  .achievement-cta p {
+    font-size: 13px;
+  }
+}
+
+
+/* =====================================================
+   ANNOUNCEMENTS SECTION
+===================================================== */
+
+.announcements-section {
+  width: 100%;
+
+  background: #ffffff;
+
+  padding: 45px 30px 55px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.announcements-container {
+  width: 100%;
+
+  max-width: 1030px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.announcements-header {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   SMALL GREEN LABEL
+===================================================== */
+
+.announcements-label {
+  margin-bottom: 14px;
+
+  color: #009f49;
+
+  font-size: 11px;
+
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.announcements-header h2 {
+  margin: 0;
+
+  color: #050505;
+
+  font-size: 48px;
+
+  line-height: 1.02;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+
+/* =====================================================
+   SUBTITLE
+===================================================== */
+
+.announcements-header p {
+  margin: 8px 0 0;
+
+  color: #666666;
+
+  font-size: 17px;
+
+  line-height: 1.3;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.announcements-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 25px;
+
+  row-gap: 35px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.announcement-card {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 108px;
+
+  padding: 10px 13px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dedede;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.10);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.announcement-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.announcement-image {
+  position: relative;
+
+  width: 105px;
+
+  height: 86px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+}
+
+
+.announcement-image-img {
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.announcement-content {
+  min-width: 0;
+
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
+
+.announcement-category {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 98px;
+
+  height: 18px;
+
+  padding: 0 10px;
+
+  box-sizing: border-box;
+
+  margin-bottom: 7px;
+
+  border-radius: 5px;
+
+  background: #dff1b8;
+
+  color: #00a34b;
+
+  font-size: 14px;
+
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.announcement-content h3 {
+  margin: 0 0 7px;
+
+  color: #555555;
+
+  font-size: 19px;
+
+  line-height: 1.1;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.announcement-date {
+  margin: 0;
+
+  color: #111111;
+
+  font-size: 12px;
+
+  line-height: 1.2;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   READ UPDATE
+===================================================== */
+
+.announcement-read {
+  align-self: flex-end;
+
+  flex-shrink: 0;
+
+  margin-bottom: 1px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #009f49;
+
+  font-family: inherit;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+
+.announcement-read:hover {
+  color: #007d39;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .announcements-section {
+    padding-left: 25px;
+
+    padding-right: 25px;
+  }
+
+
+  .announcements-container {
+    max-width: 900px;
+  }
+
+
+  .announcements-header h2 {
+    font-size: 43px;
+  }
+
+
+  .announcement-card {
+    gap: 14px;
+  }
+
+
+  .announcement-image {
+    width: 95px;
+
+    height: 82px;
+  }
+
+
+  .announcement-content h3 {
+    font-size: 17px;
+  }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .announcements-section {
+    padding-top: 40px;
+
+    padding-bottom: 45px;
+  }
+
+
+  .announcements-header h2 {
+    font-size: 38px;
+  }
+
+
+  .announcements-grid {
+    column-gap: 15px;
+
+    row-gap: 20px;
+  }
+
+
+  .announcement-card {
+    min-height: 105px;
+
+    padding: 9px;
+
+    gap: 11px;
+  }
+
+
+  .announcement-image {
+    width: 90px;
+
+    height: 80px;
+  }
+
+
+  .announcement-category {
+    min-width: 85px;
+
+    height: 17px;
+
+    font-size: 7px;
+  }
+
+
+  .announcement-content h3 {
+    font-size: 15px;
+  }
+
+
+  .announcement-date {
+    font-size: 9px;
+  }
+
+
+  .announcement-read {
+    font-size: 7px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .announcements-section {
+    padding: 35px 18px 40px;
+  }
+
+
+  .announcements-label {
+    font-size: 10px;
+
+    margin-bottom: 11px;
+  }
+
+
+  .announcements-header {
+    margin-bottom: 23px;
+  }
+
+
+  .announcements-header h2 {
+    font-size: 31px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+  }
+
+
+  .announcements-header p {
+    font-size: 14px;
+
+    margin-top: 7px;
+  }
+
+
+  /* =============================================
+     ONE COLUMN
+  ============================================= */
+
+  .announcements-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+
+  .announcement-card {
+    min-height: 105px;
+
+    width: 100%;
+
+    padding: 9px;
+
+    gap: 12px;
+  }
+
+
+  .announcement-image {
+    width: 100px;
+
+    height: 82px;
+  }
+
+
+  .announcement-category {
+    height: 18px;
+
+    min-width: 90px;
+
+    font-size: 7px;
+  }
+
+
+  .announcement-content h3 {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+  }
+
+
+  .announcement-date {
+    font-size: 9px;
+  }
+
+
+  .announcement-read {
+    font-size: 8px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .announcements-section {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .announcements-header h2 {
+    font-size: 27px;
+  }
+
+
+  .announcement-card {
+    min-height: 100px;
+
+    gap: 9px;
+  }
+
+
+  .announcement-image {
+    width: 85px;
+
+    height: 76px;
+  }
+
+
+  .announcement-category {
+    min-width: 80px;
+
+    height: 16px;
+
+    font-size: 6px;
+  }
+
+
+  .announcement-content h3 {
+    font-size: 14px;
+  }
+
+
+  .announcement-date {
+    font-size: 8px;
+  }
+
+
+  .announcement-read {
+    font-size: 7px;
+  }
+}
+
+/* =====================================================
+   EVENT REGISTRATION SECTION
+===================================================== */
+
+.event-registration {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 650px;
+
+  padding: 15px 30px 70px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.registration-header {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  margin-bottom: 16px;
+}
+
+
+/* =====================================================
+   SMALL GREEN TITLE
+===================================================== */
+
+.registration-label {
+  margin-bottom: 8px;
+
+  color: #009f49;
+
+  font-size: 11px;
+
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.registration-header h2 {
+  margin: 0;
+
+  color: #050505;
+
+  font-size: 52px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.registration-header p {
+  margin: 8px 0 0;
+
+  color: #666666;
+
+  font-size: 18px;
+
+  line-height: 1.3;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.registration-card {
+  position: relative;
+
+  z-index: 3;
+
+  width: 640px;
+
+  min-height: 390px;
+
+  margin: 0 auto;
+
+  padding: 32px 40px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 2px 7px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.registration-form {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =====================================================
+   TWO COLUMN ROW
+===================================================== */
+
+.registration-row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+
+  margin-bottom: 14px;
+}
+
+
+/* =====================================================
+   FIELD
+===================================================== */
+
+.registration-field {
+  width: 100%;
+ 
+  width:280px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.registration-field label {
+  margin-bottom: 6px;
+
+  color: #222222;
+
+  font-size: 16px;
+
+  line-height: 1.2;
+
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   REQUIRED *
+===================================================== */
+
+.registration-field label span {
+  color: #e00000;
+  font-size: 12px;
+  margin-left: 1px;
+}
+
+
+/* =====================================================
+   OPTIONAL
+===================================================== */
+
+.registration-field label small {
+  margin-left: 3px;
+
+  color: #e00000;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.registration-field input {
+  width: 100%;
+
+  height: 38px;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #a8a8a8;
+
+  border-radius: 4px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #222222;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.registration-field select {
+  width: 100%;
+
+  height: 38px;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #a8a8a8;
+
+  border-radius: 4px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #222222;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* =====================================================
+   TEXTAREA
+===================================================== */
+
+.registration-field textarea {
+  width: 100%;
+  width:550px;
+
+  height: 75px;
+
+  padding: 10px 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #a8a8a8;
+
+  border-radius: 4px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #222222;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  resize: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* =====================================================
+   PLACEHOLDER
+===================================================== */
+
+.registration-field input::placeholder,
+.registration-field textarea::placeholder {
+  color: #aaaaaa;
+
+  opacity: 1;
+}
+
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+.registration-field input:focus,
+.registration-field select:focus,
+.registration-field textarea:focus {
+  border-color: #00a94f;
+
+  box-shadow:
+    0 0 0 2px rgba(0, 169, 79, 0.10);
+}
+
+
+/* =====================================================
+   FULL WIDTH FIELD
+===================================================== */
+
+.registration-full {
+  margin-bottom: 13px;
+}
+
+
+/* =====================================================
+   CHECKBOX
+===================================================== */
+
+.registration-checkbox {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 0;
+
+  color: #999999;
+
+  font-size: 16px;
+
+  line-height: 1.3;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   CHECKBOX INPUT
+===================================================== */
+
+.registration-checkbox input {
+  appearance: none;
+
+  width: 12px;
+
+  height: 12px;
+
+  margin: 0;
+
+  padding: 0;
+
+  flex-shrink: 0;
+
+  border: 1px solid #bdbdbd;
+
+  border-radius: 1px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   CHECKED CHECKBOX
+===================================================== */
+
+.registration-checkbox input:checked {
+  position: relative;
+
+  border-color: #00a94f;
+
+  background: #00a94f;
+}
+
+
+.registration-checkbox input:checked::after {
+  content: "✓";
+
+  position: absolute;
+
+  top: -1px;
+
+  left: 1px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.registration-submit {
+  align-self: center;
+
+  width: 184px;
+
+  height: 42px;
+
+  margin-top: 14px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: #00a94f;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.registration-submit:hover {
+  background: #008d42;
+
+  transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   DECORATIVE LEAF IMAGE
+===================================================== */
+
+.registration-leaf {
+  position: absolute;
+
+  z-index: 1;
+
+  width: 175px;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  pointer-events: none;
+
+  user-select: none;
+
+  opacity: 0.65;
+}
+
+
+/* =====================================================
+   LEFT LEAF
+===================================================== */
+
+.registration-leaf-left {
+  left: 5px;
+
+  bottom: 65px;
+
+  transform: rotate(0deg);
+}
+
+
+/* =====================================================
+   RIGHT LEAF
+===================================================== */
+
+.registration-leaf-right {
+  right: 5px;
+
+  bottom: 65px;
+
+  transform: scaleX(-1);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .event-registration {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+
+  .registration-header h2 {
+    font-size: 45px;
+  }
+
+
+  .registration-header p {
+    font-size: 16px;
+  }
+
+
+  .registration-leaf {
+    width: 145px;
+
+    opacity: 0.5;
+  }
+
+
+  .registration-leaf-left {
+    left: -10px;
+  }
+
+
+  .registration-leaf-right {
+    right: -10px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .event-registration {
+    min-height: auto;
+
+    padding: 35px 18px 60px;
+  }
+
+
+  /* HEADER */
+
+  .registration-header {
+    margin-bottom: 25px;
+  }
+
+
+  .registration-label {
+    font-size: 10px;
+  }
+
+
+  .registration-header h2 {
+    font-size: 35px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .registration-header p {
+    max-width: 350px;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+  }
+
+
+  /* FORM CARD */
+
+  .registration-card {
+    width: 100%;
+
+    max-width: 440px;
+
+    min-height: auto;
+
+    padding: 28px 22px;
+  }
+
+
+  /* ROWS */
+
+  .registration-row {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 14px;
+  }
+
+
+  /* LABEL */
+
+  .registration-field label {
+    font-size: 12px;
+
+    margin-bottom: 6px;
+  }
+
+
+  /* INPUT */
+
+  .registration-field input,
+  .registration-field select {
+    height: 42px;
+
+    padding: 0 12px;
+
+    font-size: 13px;
+  }
+
+
+  /* TEXTAREA */
+
+  .registration-field textarea {
+    height: 100px;
+
+    padding: 10px 12px;
+
+    font-size: 13px;
+  }
+
+
+  /* FULL FIELD */
+
+  .registration-full {
+    margin-bottom: 14px;
+  }
+
+
+  /* CHECKBOX */
+
+  .registration-checkbox {
+    align-items: flex-start;
+
+    font-size: 9px;
+
+    gap: 7px;
+  }
+
+
+  .registration-checkbox input {
+    width: 13px;
+
+    height: 13px;
+  }
+
+
+  /* BUTTON */
+
+  .registration-submit {
+    width: 180px;
+
+    height: 36px;
+
+    margin-top: 16px;
+
+    font-size: 11px;
+  }
+
+
+  /* LEAVES */
+
+  .registration-leaf {
+    width: 100px;
+
+    opacity: 0.35;
+  }
+
+
+  .registration-leaf-left {
+    left: -20px;
+
+    bottom: 20px;
+  }
+
+
+  .registration-leaf-right {
+    right: -20px;
+
+    bottom: 20px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .event-registration {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .registration-header h2 {
+    font-size: 31px;
+  }
+
+
+  .registration-header p {
+    font-size: 13px;
+  }
+
+
+  .registration-card {
+    padding: 24px 17px;
+  }
+
+
+  .registration-field input,
+  .registration-field select {
+    height: 40px;
+
+    font-size: 12px;
+  }
+
+
+  .registration-field textarea {
+    height: 90px;
+
+    font-size: 12px;
+  }
+
+
+  .registration-leaf {
+    width: 85px;
+  }
+
+
+  .registration-leaf-left {
+    left: -25px;
+  }
+
+
+  .registration-leaf-right {
+    right: -25px;
+  }
+}
