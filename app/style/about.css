@@ -1,0 +1,1145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+    font-family: var(--font-inter), Arial, sans-serif;
+
+}
+
+body {
+   font-family: var(--font-inter), Arial, sans-serif;
+
+  background: white;
+  color: black;
+}
+
+/* =====================================================
+   ABOUT HERO
+===================================================== */
+
+.about-hero {
+  position: relative;
+
+  width: 100%;
+  height: 545px;
+
+  overflow: hidden;
+
+  background: #e5f6eb;
+}
+
+
+/* =====================================================
+   BACKGROUND IMAGE
+===================================================== */
+
+.about-hero-image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.about-bg-image {
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* =====================================================
+   LEFT CONTENT PANEL
+===================================================== */
+
+.about-hero-content {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  z-index: 2;
+
+  width: 44%;
+
+  height: 100%;
+
+  padding: 52px 80px;
+
+  box-sizing: border-box;
+
+  background: #e3f4e9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+    border-right: 10px solid #00a651;
+
+  /* Curved right side */
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+
+/* =====================================================
+   SMALL TITLE
+===================================================== */
+
+.about-small-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 8px;
+
+  font-size: 40px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  color: #69564f;
+}
+
+.about-small-title span {
+  display: block;
+
+  width: 125px;
+
+  height: 2px;
+
+  background: #69564f;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.about-hero-content h1 {
+  margin: 0 0 22px;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 60px;
+
+  line-height: 1.02;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.about-hero-content h1 span {
+  color: #00a94f;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.about-hero-content p {
+  max-width: 570px;
+
+  margin: 0 0 26px;
+
+  font-size: 19px;
+
+  line-height: 1.65;
+
+
+  
+  font-weight: 400;
+
+  color: #111;
+}
+
+
+/* =====================================================
+   OUR STORY BUTTON
+===================================================== */
+
+.about-story-button {
+  width: fit-content;
+
+  border: none;
+
+  background: #00a94f;
+
+  color: white;
+
+  padding: 16px 24px;
+
+  border-radius: 30px;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.about-story-button span {
+  font-size: 28px;
+
+  line-height: 0;
+
+  transition: transform 0.3s ease;
+}
+
+.about-story-button:hover {
+  background: #008d42;
+
+  transform: translateY(-2px);
+}
+
+.about-story-button:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .about-hero {
+    height: 500px;
+  }
+
+  .about-hero-content {
+    width: 48%;
+
+    padding: 45px 55px;
+
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+  }
+
+  .about-small-title {
+    font-size: 32px;
+  }
+
+  .about-small-title span {
+    width: 90px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 48px;
+  }
+
+  .about-hero-content p {
+    font-size: 16px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .about-hero {
+    height: auto;
+
+    min-height: 750px;
+  }
+
+  .about-hero-image {
+    height: 420px;
+
+    top: auto;
+    bottom: 0;
+  }
+
+  .about-hero-content {
+    position: relative;
+
+    width: 100%;
+
+    height: auto;
+
+    min-height: 430px;
+
+    padding: 45px 30px;
+
+    justify-content: center;
+
+    border-radius: 0;
+
+    background: #e3f4e9;
+  }
+
+  .about-small-title {
+    font-size: 28px;
+  }
+
+  .about-small-title span {
+    width: 70px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 42px;
+
+    letter-spacing: -1px;
+  }
+
+  .about-hero-content p {
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+  .about-story-button {
+    font-size: 16px;
+
+    padding: 14px 21px;
+  }
+}
+
+/* =====================================================
+   OUR STORY SECTION
+===================================================== */
+
+.our-story-section {
+  width: 100%;
+  background: #ffffff;
+}
+
+
+/* =====================================================
+   OUR STORY HEADING
+===================================================== */
+
+.our-story-heading {
+  width: 100%;
+  height: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+}
+
+.our-story-heading h2 {
+  margin: 0;
+
+  font-size: 40px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  color: #000000;
+
+  letter-spacing: -2px;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.our-story-image {
+  width: 100%;
+  height: 470px;
+
+  overflow: hidden;
+}
+
+.our-story-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.our-story-content {
+  width: 100%;
+
+  padding: 70px 6% 90px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background: #ffffff;
+}
+
+
+/* HEADING */
+
+.our-story-content h3 {
+  margin: 0 auto 45px;
+
+  max-width: 900px;
+
+  font-size: 40px;
+
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  color: #000000;
+
+  letter-spacing: -2px;
+}
+
+
+/* PARAGRAPH */
+
+.our-story-content p {
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+
+  font-weight: 400;
+
+  color: #111111;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .our-story-heading {
+    height: 180px;
+  }
+
+  .our-story-heading h2 {
+    font-size: 46px;
+  }
+
+  .our-story-image {
+    height: 380px;
+  }
+
+  .our-story-content {
+    padding: 60px 6% 70px;
+  }
+
+  .our-story-content h3 {
+    font-size: 42px;
+  }
+
+  .our-story-content p {
+    font-size: 18px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .our-story-heading {
+    height: 130px;
+  }
+
+  .our-story-heading h2 {
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+
+  .our-story-image {
+    height: 260px;
+  }
+
+  .our-story-content {
+    padding: 45px 22px 55px;
+  }
+
+  .our-story-content h3 {
+    font-size: 32px;
+
+    line-height: 1.1;
+
+    margin-bottom: 28px;
+
+    letter-spacing: -1px;
+  }
+
+  .our-story-content p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+}
+
+/* =========================================
+   CORE VALUES
+========================================= */
+
+.core-values-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 100px 4.5% 120px;
+  box-sizing: border-box;
+}
+
+/* ================= HEADING ================= */
+
+.core-values-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.core-values-heading h2 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #000;
+}
+
+.core-values-heading h3 {
+  margin: 28px 0 0;
+  font-size: 32px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #000;
+}
+
+/* ================= VALUES CONTAINER ================= */
+
+.core-values-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  align-items: stretch;
+}
+
+/* ================= INDIVIDUAL BOX ================= */
+.core-value-card {
+  min-height: 270px;
+  padding: 28px 25px 35px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+  background: #ffffff;
+
+  /* Right vertical line */
+  border-right: 3px solid #00a651;
+
+  position: relative;
+}
+
+/* Shorter bottom line */
+.core-value-card::after {
+  content: "";
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  width: calc(100% - 20px);
+  height: 3px;
+
+  background: #00a651;
+
+  border-bottom-right-radius: 10px;
+}
+
+/* First box left edge */
+.core-value-card:first-child {
+  border-left: none;
+}
+
+/* Last box */
+.core-value-card:last-child {
+  border-right: 3px solid #00a651;
+}
+
+/* ================= ICON ================= */
+
+.core-value-icon {
+  width: 72px;
+  height: 72px;
+
+  margin-bottom: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #00a651;
+}
+
+.core-value-icon svg {
+  width: 62px;
+  height: 62px;
+  display: block;
+}
+
+/* ================= TITLE ================= */
+
+.core-value-card h4 {
+  margin: 0 0 12px;
+
+  font-size: 25px;
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: #000000;
+}
+
+/* ================= DESCRIPTION ================= */
+
+.core-value-card p {
+  margin: 0;
+
+  max-width: 230px;
+
+  font-size: 18px;
+  line-height: 1.45;
+
+  font-weight: 400;
+
+  color: #111111;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .core-values-section {
+    padding: 80px 30px 100px;
+  }
+
+  .core-values-heading h2 {
+    font-size: 48px;
+  }
+
+  .core-values-heading h3 {
+    font-size: 34px;
+  }
+
+  .core-value-card {
+    padding: 25px 18px 32px;
+  }
+
+  .core-value-card h4 {
+    font-size: 21px;
+  }
+
+  .core-value-card p {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================
+   MOBILE / TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .core-values-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  .core-value-card {
+    border-right: 3px solid #00a651;
+    border-bottom: 3px solid #00a651;
+    border-radius: 0 0 10px 0;
+  }
+
+  .core-value-card:nth-child(2n) {
+    border-right: 3px solid #00a651;
+  }
+
+  .core-values-heading h2 {
+    font-size: 40px;
+  }
+
+  .core-values-heading h3 {
+    font-size: 30px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+  .core-values-section {
+    padding: 60px 20px 80px;
+  }
+
+  .core-values-heading {
+    margin-bottom: 45px;
+  }
+
+  .core-values-heading h2 {
+    font-size: 32px;
+  }
+
+  .core-values-heading h3 {
+    margin-top: 18px;
+    font-size: 25px;
+  }
+
+  .core-values-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .core-value-card {
+    border-right: 3px solid #00a651;
+    border-bottom: 3px solid #00a651;
+    border-radius: 0 0 10px 0;
+  }
+}
+
+/* =========================================
+   LEADERBOARD SECTION
+========================================= */
+
+.leaderboard-section {
+  width: 100%;
+  padding: 75px 70px 80px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+/* ================= HEADING ================= */
+
+.leaderboard-heading {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 55px;
+}
+
+.leaderboard-heading h2 {
+  margin: 0 0 18px;
+
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 800;
+
+  color: #000000;
+}
+
+.leaderboard-heading h3 {
+  margin: 0 0 22px;
+
+  font-size: 27px;
+  line-height: 1.15;
+  font-weight: 700;
+
+  color: #000000;
+}
+
+.leaderboard-heading p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #111111;
+}
+
+/* ================= LEADERS ================= */
+
+.leaders-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 100px;
+}
+
+/* ================= CARD ================= */
+
+.leader-card {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ================= IMAGE ================= */
+
+.leader-image-wrapper {
+  width: 145px;
+  height: 145px;
+
+  border-radius: 50%;
+
+  padding: 0;
+
+  border: 3px solid #00a651;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  margin-bottom: 18px;
+}
+
+.leader-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 50%;
+}
+
+/* ================= NAME ================= */
+
+.leader-card h4 {
+  margin: 0 0 4px;
+
+  font-size: 16px;
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  color: #000000;
+}
+
+/* ================= DESIGNATION ================= */
+
+.leader-card h5 {
+  margin: 0 0 12px;
+
+  font-size: 15px;
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  color: #000000;
+}
+
+/* ================= DESCRIPTION ================= */
+
+.leader-card p {
+  max-width: 260px;
+
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.45;
+
+  color: #111111;
+}
+
+/* =========================================
+   CERTIFICATES & RECOGNITION
+========================================= */
+
+.certificates-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 6% 100px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+
+.certificates-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.certificates-heading h2 {
+  margin: 0 0 28px;
+  font-size: 38px;
+  font-weight: 800;
+  color: #000;
+  line-height: 1.1;
+}
+
+.certificates-heading p {
+  margin: 0 auto;
+  max-width: 850px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+  line-height: 1.5;
+}
+
+/* Cards container */
+
+.certificates-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Individual card */
+
+.certificate-card {
+  min-height: 300px;
+
+  background: #ffffff;
+
+  border-radius: 6px;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 35px 25px;
+
+  box-sizing: border-box;
+}
+
+/* Certificate icon */
+
+.certificate-icon {
+  width: 125px;
+  height: 145px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.certificate-icon svg {
+  width: 115px;
+  height: 135px;
+
+  display: block;
+}
+
+/* Download button */
+
+.certificate-download {
+  min-width: 155px;
+  height: 48px;
+
+  padding: 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  border-radius: 30px;
+
+  background: #00a651;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  box-sizing: border-box;
+
+  transition: all 0.2s ease;
+}
+
+.certificate-download:hover {
+  background: #008f45;
+  transform: translateY(-2px);
+}
+
+.download-arrow {
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .certificates-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certificates-heading h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .certificates-section {
+    padding: 60px 20px 70px;
+  }
+
+  .certificates-container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .certificates-heading h2 {
+    font-size: 28px;
+  }
+
+  .certificates-heading p {
+    font-size: 15px;
+  }
+}
+
+.vision-mission {
+  width: 100%;
+  background: #fff;
+  padding: 40px 40px 55px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.vision-mission-box {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height:300px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: #e1f3e9;
+}
+
+/* COMMON */
+
+.vision-box,
+.mission-box {
+  padding: 28px 20px 25px;
+}
+
+.vision-box {
+  border-right: 1px solid #fff;
+}
+
+/* HEADING */
+
+.vision-box h2,
+.mission-box h2 {
+  margin: 0 0 15px;
+
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 800;
+  color: #050505;
+}
+
+/* SUB HEADING */
+
+.vision-box h3,
+.mission-box h3 {
+  margin: 0 0 18px;
+
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #050505;
+}
+
+/* LIST */
+
+.vision-box ul,
+.mission-box ul {
+  margin: 0;
+  padding-left: 19px;
+}
+
+.vision-box li,
+.mission-box li {
+  margin-bottom: 6px;
+
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: #111;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .vision-mission {
+    padding: 35px 20px 45px;
+  }
+
+  .vision-mission-box {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-box {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  .vision-box h2,
+  .mission-box h2 {
+    font-size: 28px;
+  }
+
+  .vision-box h3,
+  .mission-box h3 {
+    font-size: 20px;
+  }
+}

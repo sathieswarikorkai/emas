@@ -1,0 +1,827 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+    font-family: var(--font-inter), Arial, sans-serif;
+
+}
+
+body {
+   font-family: var(--font-inter), Arial, sans-serif;
+
+  background: white;
+  color: black;
+}
+
+
+/* =====================================================
+   PLAN HERO
+===================================================== */
+
+.plan-hero {
+  position: relative;
+
+  width: 100%;
+  height: 545px;
+
+  overflow: hidden;
+
+  background: #e5f6eb;
+}
+
+
+/* =====================================================
+   BACKGROUND IMAGE
+===================================================== */
+
+.plan-hero-image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.plan-hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: contain;
+  object-position: right center;
+}
+
+
+/* =====================================================
+   LEFT CONTENT PANEL
+===================================================== */
+
+.plan-hero-content {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  z-index: 2;
+
+  width: 44%;
+
+  height: 100%;
+
+  padding: 52px 80px;
+
+  box-sizing: border-box;
+
+  background: #e3f4e9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-right: 10px solid #00a651;
+
+  /* Curved right side */
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+
+/* =====================================================
+   PLAN SMALL TITLE
+===================================================== */
+
+.plan-text h2 {
+  margin: 0 0 8px;
+
+  font-size: 40px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  color: #69564f;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.plan-text h1 {
+  margin: 0 0 22px;
+
+  font-size: 60px;
+
+  line-height: 1.02;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+
+  color: #00a94f;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.plan-text p {
+  max-width: 570px;
+
+  margin: 0 0 26px;
+
+  font-size: 19px;
+
+  line-height: 1.65;
+
+  font-weight: 400;
+
+  color: #111;
+}
+
+
+/* =====================================================
+   EXPLORE PLAN BUTTON
+===================================================== */
+
+.plan-text button {
+  width: fit-content;
+
+  border: none;
+
+  background: #00a94f;
+
+  color: white;
+
+  padding: 16px 24px;
+
+  border-radius: 30px;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.plan-text button b {
+  font-size: 28px;
+
+  line-height: 0;
+
+  font-weight: 400;
+
+  transition: transform 0.3s ease;
+}
+
+.plan-text button:hover {
+  background: #008d42;
+
+  transform: translateY(-2px);
+}
+
+.plan-text button:hover b {
+  transform: translateX(5px);
+}
+
+
+/* =====================================================
+   LEAF DECORATION
+===================================================== */
+
+.plan-leaf {
+  position: absolute;
+
+  width: 70px;
+  height: 40px;
+
+  background: #7cc62a;
+
+  border-radius: 100% 0 100% 0;
+
+  z-index: 3;
+}
+
+.plan-leaf.top {
+  top: -10px;
+  left: -15px;
+
+  transform: rotate(25deg);
+}
+
+.plan-leaf.bottom {
+  bottom: -10px;
+  left: -10px;
+
+  transform: rotate(-25deg);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .plan-hero {
+    height: 500px;
+  }
+
+  .plan-hero-content {
+    width: 48%;
+
+    padding: 45px 55px;
+
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+  }
+
+  .plan-text h2 {
+    font-size: 32px;
+  }
+
+  .plan-text h1 {
+    font-size: 48px;
+  }
+
+  .plan-text p {
+    font-size: 16px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .plan-hero {
+    height: auto;
+
+    min-height: 750px;
+  }
+
+  .plan-hero-image {
+    height: 420px;
+
+    top: auto;
+    bottom: 0;
+  }
+
+  .plan-hero-content {
+    position: relative;
+
+    width: 100%;
+
+    height: auto;
+
+    min-height: 430px;
+
+    padding: 45px 30px;
+
+    justify-content: center;
+
+    border-radius: 0;
+
+    border-right: none;
+
+    background: #e3f4e9;
+  }
+
+  .plan-text h2 {
+    font-size: 28px;
+  }
+
+  .plan-text h1 {
+    font-size: 42px;
+
+    letter-spacing: -1px;
+  }
+
+  .plan-text p {
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+  .plan-text button {
+    font-size: 16px;
+
+    padding: 14px 21px;
+  }
+}
+
+
+
+.business-plan-section {
+  width: 100%;
+  background: #fff;
+  padding: 50px 40px 65px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* INTRO */
+
+.business-plan-intro h2 {
+  margin: 0 0 18px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #050505;
+}
+
+.business-plan-intro h1 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #050505;
+}
+
+.business-plan-intro p {
+  margin: 20px auto 18px;
+  max-width: 700px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #222;
+}
+
+.business-plan-btn {
+  border: none;
+  background: #00a651;
+  color: #fff;
+  padding: 11px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.business-plan-btn span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* HOW PLAN WORKS */
+
+.plan-works {
+  margin-top: 52px;
+}
+
+.plan-works > h2 {
+  margin: 0 0 28px;
+  font-size: 25px;
+  font-weight: 800;
+  color: #050505;
+}
+
+.plan-steps {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.plan-step-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.plan-step {
+  flex: 1;
+  text-align: center;
+}
+
+.plan-step-icon {
+  width: 98px;
+  height: 98px;
+  margin: 0 auto 12px;
+
+  border-radius: 50%;
+  background: #f0f8dc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-step-icon img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+}
+
+.plan-step h3 {
+  margin: 0 0 7px;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #080808;
+}
+
+.plan-step p {
+  max-width: 150px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.45;
+  font-weight: 500;
+  color: #111;
+}
+
+.plan-divider {
+  width: 2px;
+  height: 54px;
+  background: #111;
+  margin: 0 8px;
+}
+
+/* BUSINESS GROWTH FLOW */
+
+.growth-flow-title {
+  margin-top: 58px;
+}
+
+.growth-flow-title h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #050505;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .plan-steps {
+    max-width: 750px;
+  }
+
+  .plan-step-icon {
+    width: 82px;
+    height: 82px;
+  }
+
+  .plan-step-icon img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .plan-step h3 {
+    font-size: 14px;
+  }
+
+  .plan-step p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  .business-plan-section {
+    padding: 40px 20px 50px;
+  }
+
+  .business-plan-intro h2 {
+    font-size: 26px;
+  }
+
+  .business-plan-intro h1 {
+    font-size: 32px;
+  }
+
+  .plan-steps {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .plan-step-wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .plan-divider {
+    width: 50px;
+    height: 2px;
+    margin: 20px auto 0;
+  }
+}
+
+
+.plan-benefits {
+  width: 100%;
+  background: #fff;
+  padding: 48px 40px 65px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.plan-benefits h2 {
+  margin: 0 0 32px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #050505;
+ 
+}
+
+.benefits-list {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.plan-benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-benefit-icon {
+  width: 98px;
+  height: 98px;
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+  background: #f0f8dc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-benefit-icon img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.plan-benefit-item h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #111;
+}
+
+.plan-benefit-item p {
+  max-width: 175px;
+  margin: 0 auto;
+
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 500;
+  color: #111;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .benefits-list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .plan-benefits {
+    padding: 40px 20px 50px;
+  }
+
+  .plan-benefits h2 {
+    font-size: 27px;
+  }
+
+  .benefits-list {
+    grid-template-columns: 1fr;
+  }
+}
+.business-growth-flow {
+  width: 100%;
+  background: #fff;
+  padding: 60px 40px 160px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HEADING */
+
+.business-growth-flow > h2 {
+  margin: -35px 0 45px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #050505;
+}
+
+/* MAIN FLOW */
+
+.growth-flow {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 620px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+/* CARDS */
+
+.growth-card {
+  position: absolute;
+  width: 31%;
+  height: 210px;
+
+  background: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 32px 25px 20px;
+}
+
+/* TOP ROW */
+
+.card-1 {
+  left: 0;
+  top: 0;
+}
+
+.card-2 {
+  left: 34.5%;
+  top: 0;
+}
+
+.card-3 {
+  right: 0;
+  top: 0;
+}
+
+/* BOTTOM ROW */
+
+.card-6 {
+  left: 0;
+  bottom: 0;
+}
+
+.card-5 {
+  left: 34.5%;
+  bottom: 0;
+}
+
+.card-4 {
+  right: 0;
+  bottom: 0;
+}
+
+/* NUMBER */
+
+.growth-number {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #f0f8dc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+
+  font-size: 32px;
+  font-weight: 800;
+  color: #050505;
+}
+
+/* TEXT */
+
+.growth-card h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #111;
+}
+
+.growth-card p {
+  max-width: 180px;
+  margin: 0;
+
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #111;
+}
+
+/* CURVE ARROWS */
+
+.curve-arrow {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  object-fit: contain;
+}
+
+/* 01 → 02 */
+
+.arrow-1 {
+  width: 75px;
+  left: 30%;
+  top: -32px;
+}
+
+/* 02 → 03 */
+
+.arrow-2 {
+  width: 75px;
+  left: 64%;
+  top: -32px;
+}
+
+/* 03 ↓ 04 */
+
+.arrow-3 {
+  width: 55px;
+  right: 4%;
+  top: 250px;
+}
+
+/* 04 → 05 */
+
+.arrow-4 {
+  width: 75px;
+  left: 64%;
+  bottom: -32px;
+}
+
+/* 05 → 06 */
+
+.arrow-5 {
+  width: 75px;
+  left: 30%;
+  bottom: -32px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+  .business-growth-flow {
+    padding: 40px 20px 60px;
+  }
+
+  .growth-flow {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .growth-card {
+    position: relative;
+    width: 100%;
+    height: 210px;
+
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+
+    margin: 0 auto;
+  }
+
+  .curve-arrow {
+    display: none;
+  }
+}
