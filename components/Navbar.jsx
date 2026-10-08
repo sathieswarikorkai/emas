@@ -81,7 +81,8 @@ export default function Navbar() {
           Events
         </Link>
 
-        <Link href="#contact">
+        <Link href="/Contact"
+         className={pathname === "/Contact" ? "active" : ""}>
           Contact us
         </Link>
 
@@ -222,7 +223,8 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="#contact"
+            href="/Contact"
+             className={pathname === "/Contact" ? "active" : ""}
             onClick={closeMobileMenu}
           >
             Contact us

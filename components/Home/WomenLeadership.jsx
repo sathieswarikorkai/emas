@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const slides = [
   {
@@ -37,9 +38,14 @@ const slides = [
 ];
 
 export default function WomenLeadership() {
+  const router = useRouter();
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Auto slider
+  /* =====================================================
+     AUTO SLIDER
+  ===================================================== */
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) =>
@@ -50,58 +56,110 @@ export default function WomenLeadership() {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <section className="women-leadership-section">
+  /* =====================================================
+     GO TO WOMEN PAGE
+  ===================================================== */
 
-      {/* ================= HEADER ================= */}
+  const handleWomenClick = () => {
+    router.push("/Women");
+  };
+
+  return (
+    <section
+      className="women-leadership-section"
+      onClick={handleWomenClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          handleWomenClick();
+        }
+      }}
+    >
+
+      {/* =====================================================
+          HEADER
+      ===================================================== */}
 
       <div className="women-leadership-header">
-        <h2>EMAS Women Leadership</h2>
+
+        <h2>
+          EMAS Women Leadership
+        </h2>
 
         <p>
           Together, we nurture leadership, celebrate achievements, and
           <br />
           create opportunities for every woman to grow and thrive.
         </p>
+
       </div>
 
 
-      {/* ================= SLIDER ================= */}
+      {/* =====================================================
+          SLIDER
+      ===================================================== */}
 
       <div className="women-leadership-slider">
 
-        {/* LEFT CONTENT */}
+        {/* =====================================================
+            LEFT CONTENT
+        ===================================================== */}
 
         <div className="women-leadership-content">
+
+          {/* QUOTE */}
 
           <div className="women-quote">
             “
           </div>
 
+
+          {/* TESTIMONIAL */}
+
           <p className="women-testimonial">
             {slides[currentSlide].text}
           </p>
 
-          {/* DOTS */}
 
-          <div className="women-slider-dots">
+          {/* =================================================
+              SLIDER DOTS
+          ================================================= */}
+
+          <div
+            className="women-slider-dots"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          >
+
             {slides.map((_, index) => (
+
               <button
                 key={index}
                 type="button"
                 className={`women-dot ${
-                  currentSlide === index ? "active" : ""
+                  currentSlide === index
+                    ? "active"
+                    : ""
                 }`}
-                onClick={() => setCurrentSlide(index)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setCurrentSlide(index);
+                }}
                 aria-label={`Go to slide ${index + 1}`}
               />
+
             ))}
+
           </div>
 
         </div>
 
 
-        {/* RIGHT IMAGE */}
+        {/* =====================================================
+            RIGHT IMAGE
+        ===================================================== */}
 
         <div className="women-leadership-image">
 
@@ -109,14 +167,23 @@ export default function WomenLeadership() {
             src={slides[currentSlide].image}
             alt="EMAS Women Leadership"
             fill
+            sizes="(max-width: 768px) 100vw, 40vw"
             className="women-leadership-image-element"
           />
+
 
           {/* IMAGE DETAILS */}
 
           <div className="women-image-info">
-            <h4>{slides[currentSlide].name}</h4>
-            <span>{slides[currentSlide].role}</span>
+
+            <h4>
+              {slides[currentSlide].name}
+            </h4>
+
+            <span>
+              {slides[currentSlide].role}
+            </span>
+
           </div>
 
         </div>

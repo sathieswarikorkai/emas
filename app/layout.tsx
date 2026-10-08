@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
 import "./style/globals.css";
 import "./style/about.css";
@@ -7,9 +7,12 @@ import "./style/opportunities.css";
 import "./style/plans.css";
 import "./style/training.css";
 import "./style/event.css";
+import "./style/contact.css";
+import "./style/women.css";
+import "./style/emasStory.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
   display: "swap",
 });
@@ -27,7 +30,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} h-full antialiased`}
+      className={`${jakarta.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}

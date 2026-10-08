@@ -2,7 +2,10 @@
 
 import Image from "next/image";
 
+import { useRouter } from "next/navigation";
+
 export default function Opportunities() {
+   const router = useRouter();
   return (
     <section className="opportunities-section">
 
@@ -39,7 +42,8 @@ export default function Opportunities() {
           is building a better tomorrow, one step at a time.
         </p>
 
-        <button className="opportunities-button">
+        <button className="opportunities-button"
+         onClick={() => router.push("/Opportunities")}>
           OUR STORY
         </button>
 

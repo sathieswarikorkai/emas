@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const journeyOptions = [
   {
@@ -21,6 +22,9 @@ const journeyOptions = [
 ];
 
 export default function ChooseJourney() {
+
+  const router = useRouter();
+
   return (
     <section className="choose-journey-section">
 
@@ -41,7 +45,11 @@ export default function ChooseJourney() {
             thoughtfully crafted herbal products to suit every journey.
           </p>
 
-          <button className="journey-learn-button">
+          <button
+            type="button"
+            className="journey-learn-button"
+            onClick={() => router.push("/EmasStory")}
+          >
             LEARN MORE
           </button>
 
@@ -54,8 +62,6 @@ export default function ChooseJourney() {
 
       <div className="journey-feature-grid">
 
-        {/* LEFT IMAGE */}
-
         <div className="journey-feature-card journey-product-card">
 
           <Image
@@ -67,8 +73,6 @@ export default function ChooseJourney() {
 
         </div>
 
-
-        {/* RIGHT IMAGE + OVERLAY */}
 
         <div className="journey-feature-card journey-jellybee-card">
 

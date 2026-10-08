@@ -18,7 +18,7 @@ export default function AboutStory() {
       {/* ================= SENTENCE ================= */}
       <div className="our-story-content">
         <h3>
-          Inspired by Nature,
+          Inspired  by Nature,
           <br />
           Created with Purpose.
         </h3>
