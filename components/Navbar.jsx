@@ -56,8 +56,8 @@ export default function Navbar() {
           About Us
         </Link>
 
-        <Link href="/Product"
-        className={pathname === "/Product" ? "active" : ""}>
+        <Link href="/Products"
+        className={pathname === "/Products" ? "active" : ""}>
           Products
         </Link>
 
@@ -185,7 +185,8 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/products"
+            href="/Products"
+            className={pathname === "/Products" ? "active" : ""}
             onClick={closeMobileMenu}
           >
             Products
