@@ -56,7 +56,8 @@ export default function Navbar() {
           About Us
         </Link>
 
-        <Link href="#products">
+        <Link href="/Product"
+        className={pathname === "/Product" ? "active" : ""}>
           Products
         </Link>
 
